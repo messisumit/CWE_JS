@@ -1,0 +1,18 @@
+<html>
+<h1>
+    CWE_190_Compliant
+</h1>
+
+<body>
+    <script>
+        let num = Number.MAX_SAFE_INTEGER;
+        if (Number.isSafeInteger(num + 1)) {
+            num = num + 1;
+        } else {
+            console.error("number is not safe intezer");
+        }
+        console.log(num);
+    </script>
+</body>
+
+</html>

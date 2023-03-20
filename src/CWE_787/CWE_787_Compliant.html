@@ -1,0 +1,19 @@
+<html>
+<h1>
+    cwe_787_Compliant
+</h1>
+
+<body>
+    <script>
+        let arr = [1, 2, 3];
+        if (arr.length > 3) {
+            arr[3] = 4;
+        } else {
+            // throw exception
+            console.error("invalid index write");
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>

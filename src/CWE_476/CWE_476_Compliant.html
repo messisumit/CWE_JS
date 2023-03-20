@@ -1,0 +1,17 @@
+<html>
+<h1>
+    CWE_476_Compliant
+</h1>
+
+<body>
+    <script>
+        let obj = null;
+        if (obj !== null && typeof obj !== 'undefined' && obj.property !== null && typeof obj.property !== 'undefined') {
+            console.log(obj.property);
+        } else {
+            console.error("Object or property is null or undefined.")
+        }
+    </script>
+</body>
+
+</html>

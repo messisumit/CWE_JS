@@ -1,0 +1,17 @@
+<html>
+<h1>
+    CWE_20_Compliant
+</h1>
+
+<body>
+    <script>
+        let input = prompt("enter your username:");
+        if (/^[A-Za-z]+$/.test(input)) {
+            console.log("hello " + input + " !");
+        } else {
+            console.error("Invalid input. Only alphabetic characters are allowed.");
+        }
+    </script>
+</body>
+
+</html>

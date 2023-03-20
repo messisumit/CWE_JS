@@ -1,0 +1,30 @@
+<html>
+<h1>
+    CWE_287_Compliant
+</h1>
+
+<body>
+    <script>
+        let users = [{
+            usernmame: "user1",
+            password: "Sumit@12345"
+        }, {
+            username: "user2",
+            password: "Messisumit@123"
+        }];
+        let username = prompt("Enter your Username:");
+        let password = prompt("Enter your Password:");
+        let user = users.find(u => u.username === username);
+        if (user) {
+            if (bcrypt.compareSync(password, user.password)) {
+                console.log("login successfull.");
+            } else {
+                console.error("Invalid Password");
+            }
+        } else {
+            console.error("user not found");
+        }
+    </script>
+</body>
+
+</html>

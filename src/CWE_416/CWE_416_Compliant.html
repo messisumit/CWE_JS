@@ -1,0 +1,22 @@
+<html>
+<h1>
+    CWE_416_COMPLIANT
+</h1>
+
+<body>
+    <script>
+        let obj = {
+            a: 1,
+            b: 2,
+            c: 3
+        };
+        obj = null;
+        if (obj !== null) {
+            console.log(obj.a)
+        } else {
+            console.error("Object is null.")
+        }
+    </script>
+</body>
+
+</html>
